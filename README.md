@@ -8,10 +8,5 @@ P2P Messenger is a peer to peer messaging app that allows for direct end to end 
 https://github.com/thaliproject/Tor_Onion_Proxy_Library
 
 
-## And thanks to timigod for the chat UI
-
-https://github.com/timigod/android-chat-ui
-
-
 
 
