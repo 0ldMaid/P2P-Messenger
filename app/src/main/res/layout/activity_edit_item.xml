@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Chat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPrev"
+                android:layout_width="30dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button"
+                android:text="Prev" />
+
+            <TextView
+                android:id="@+id/editTextID"
+                style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                android:layout_width="136dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Item ID"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="30dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button"
+                android:text="Next" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Edit your products for sale"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextTitle"
+                        style="@android:style/Widget.Holo.Light.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Title"
+                        android:inputType="text"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextPart"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Part Number"
+                        android:inputType="text"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextPicURL"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Picture File"
+                        android:inputType="text"
+                        android:enabled="false"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewTestPicture"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Load picture." />
+
+                    <Button
+                        android:id="@+id/buttonLoadPicture"
+                        android:layout_width="30dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:theme="@style/AppTheme.Button"
+                        android:text="Load" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextCurrency"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Currency"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info5"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextPrice"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Sale Price"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info6"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextQuantity"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Quantity"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info7"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextWeight"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Weight kg"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info8"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextLength"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Length cm"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info9"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextWidth"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Width cm"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info10"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextHeight"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Height cm"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info11"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Description"
+                        android:inputType="textMultiLine" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info12"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextNotes"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Notes"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info13"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextSearch1"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Search1"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info14"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextSearch2"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Search2"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info15"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextSearch3"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Search3"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info17"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextCustom1"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Custom1"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info18"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextCustom2"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Custom2"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/info19"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.353">
+
+                    <EditText
+                        android:id="@+id/editTextCustom3"
+                        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Custom3"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:theme="@style/AppTheme.Button"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</RelativeLayout>

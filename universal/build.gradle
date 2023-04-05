@@ -1,0 +1,32 @@
+plugins {
+    id 'maven-publish'
+    id 'java'
+}
+
+//apply plugin: 'java'
+//apply plugin: 'maven'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group = 'com.msopentech.thali'
+version = '0.0.5'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'info.guardianproject:jtorctl:0.4'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+task sourcesJar(type:Jar){
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}

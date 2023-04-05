@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#154766</color>
+    <color name="green">#00897b</color>
+    <color name="bubble_background_rcv">#f3ffd2</color>
+    <color name="bubble_background_send">#d2ffdb</color>
+    <color name="jblue">#154766</color>
+    <color name="jblue2">#2274A7</color>
+    <color name="ltcgray">#F0F0F0</color>
+    <color name="dkgrayx">#dfdfdf</color>
+    <color name="dkgrayxx">#979797</color>
+    <color name="dkgray">#F0F0F0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#F1F1F1</color>
+    <color name="background">#eeeeee</color>
+
+</resources>

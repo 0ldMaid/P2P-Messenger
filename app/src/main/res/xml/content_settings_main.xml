@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intentservice.chatui.sample.SettingsActivity">
+
+
+    <PreferenceCategory android:title="Application">
+
+        <Preference
+            android:title="Program Version ID"
+            android:summary="0.0.0"
+            android:key="programid" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Advertisements">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_user_ads"
+            android:summary="@string/checkbox_label"
+            android:title="@string/checkbox_adds" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

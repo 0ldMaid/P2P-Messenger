@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dkgray"
+    tools:context=".Store_Products"
+    tools:showIn="@layout/activity_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPrev"
+                android:layout_width="30dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button"
+                android:text="Prev" />
+
+            <EditText
+                android:id="@+id/editTextID"
+                style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                android:layout_width="136dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Item ID"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text="100000" />
+
+            <Button
+                android:id="@+id/buttonLoad"
+                android:layout_width="30dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button"
+                android:text="Load" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="30dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button"
+                android:text="Next" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewx"
+            android:layout_width="match_parent"
+            android:layout_height="555dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="58dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:layout_marginTop="10dp"
+                    android:indeterminateTint="@color/jblue2"
+                    android:progressTint="@color/jblue2"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/picture1"
+                    android:layout_width="match_parent"
+                    android:layout_height="268dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="13dp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:text="Title"
+                    android:textSize="18dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="293dp" />
+
+                <TextView
+                    android:id="@+id/textViewPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Price"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:enabled="true"
+                    android:textIsSelectable="true"
+                    android:focusable="true"
+                    android:longClickable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewPartNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Part Number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewOnHand"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:text="(133) Available"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Weight: "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDimensions"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Dimensions:"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <WebView
+                    android:id="@+id/htmlx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </WebView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewContact"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="-Seller Contact Details-" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Name: " />
+
+                    <TextView
+                        android:id="@+id/textViewNameX"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewNote"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Note: " />
+
+                    <TextView
+                        android:id="@+id/textViewNoteX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewSID"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="Seller ID: " />
+
+                    <TextView
+                        android:id="@+id/textViewSIDX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Email: " />
+
+                    <TextView
+                        android:id="@+id/textViewEmailX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewPhone"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Phone: " />
+
+                    <TextView
+                        android:id="@+id/textViewPhoneX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewWebsite"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Website: " />
+
+                    <TextView
+                        android:id="@+id/textViewWebsiteX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewLocation"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Location: " />
+
+                    <TextView
+                        android:id="@+id/textViewLocationX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewHash"
+                        android:gravity="center|right"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:text="Hash: " />
+
+                    <TextView
+                        android:id="@+id/textViewHashX"
+                        android:gravity="center|left"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        android:text="TextView" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <!-- Shared -->
+    <string name="app_name">P2P Messenger</string>
+    <string name="checkbox_adds">Покажи мне рекламу</string>
+    <string name="checkbox_label">Поддержите это приложение, показав мне рекламу.</string>
+    <!-- Shared -->
+    <!-- Home -->
+    <string name="home_title">P2P Messenger - дом</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_account">Счета 3</string>
+    <string name="account_account">Счет</string>
+    <string name="account_store">Хранить</string>
+    <string name="account_photo_album">Фотоальбом</string>
+    <string name="list_apps">Программы 2</string>
+    <string name="app_news_feed">Новостная лента</string>
+    <string name="app_matchmaker">Создатель спичек 1.0</string>
+    <string name="list_dpps">децентрализованные приложения</string>
+    <string name="list_friends">Друзья</string>
+    <string name="list_following">Следующий</string>
+    <string name="textfield_search">Search</string>
+    <!-- Home -->
+    <!-- Home Settings -->
+    <string name="title_application">Заявление</string>
+    <string name="label_application_id">Идентификатор версии программы</string>
+    <string name="title_advertisements">Объявления</string>
+    <!-- Home Settings -->
+    <!-- Account -->
+    <string name="account_title">Настройки учетной записи</string>
+    <string name="account_welcome_text">Нажмите здесь, чтобы изменить свою учетную запись и добавить новых друзей.</string>
+    <string name="account_title2">Отредактируйте свой аккаунт и добавьте новых друзей.</string>
+    <string name="button_edit_name">Редактировать имя</string>
+    <string name="button_edit_status">Изменить статус</string>
+    <string name="button_edit_birthday">Изменить день рождения</string>
+    <string name="button_edit_relationship_status">Изменить статус отношений</string>
+    <string name="button_edit_job_status">Изменить статус задания</string>
+    <string name="instructions_scan_me">Попросите вашего друга отсканировать этот код.</string>
+    <string name="instructions_scan_friend">И тогда вы также должны отсканировать их код.</string>
+    <string name="button_scan">Сканировать QR-код</string>
+    <string name="button_copy_text">Скопировать идентификатор друга в буфер обмена</string>
+    <string name="button_paste_text">Вставить идентификатор друга из буфера обмена</string>
+    <string name="account_wait_for_tor">Подождите, пока Tor загрузится…</string>
+    <string name="account_tor_address">Адрес Тора:</string>
+    <string name="account_public_key">Открытый ключ MD5:</string>
+    <string name="checkbox_allow_followers">Разрешить пользователям подписываться на меня.</string>
+    <string name="account_label_warning1">Подписчики не могут отправлять вам сообщения.</string>
+    <string name="account_label_warning2">Но любой может последовать за вами, так что будьте осторожны.</string>
+    <!-- Account -->
+    <!-- Photo Album -->
+    <string name="photo_album_title">Фотоальбом</string>
+    <string name="photo_album_title2">Добавляйте фотографии, чтобы ваши друзья могли их увидеть.</string>
+    <!-- Photo Album -->
+    <!-- Chat -->
+    <string name="chat_title">Чат</string>
+    <string name="chat_title2">Чат</string>
+    <string name="chat_textfield_message">ВВЕДИТЕ СООБЩЕНИЕ</string>
+    <string name="chat_textfield_send">ОТПРАВИТЬ</string>
+    <string name="chat_system_message_waiting">Ждем, пока друг примет.</string>
+    <string name="chat_system_message_confirmed">Друг теперь подтвержден.</string>
+    <string name="chat_system_message_confirmed2">Подтвержденный.</string>
+    <string name="chat_system_message_sent">Отправлено</string>
+    <string name="chat_system_message_read">Читать</string>
+    <string name="chat_system_message_failed">неуспешный</string>
+    <!-- Chat -->
+    <!-- News Feed -->
+    <string name="feed_title">Новостная лента</string>
+    <string name="title_friend">Друзья</string>
+    <string name="title_following">Следующий</string>
+    <!-- News Feed -->
+    <!-- Tor -->
+    <string name="tor_no_connection">Нет соединения…</string>
+    <string name="tor_restarting">Тор перезагружается…</string>
+    <string name="tor_active">Tor is active, checking connection…</string>
+    <string name="tor_connection_active">Tor активен, проверка соединения…</string>
+    <string name="tor_peer_active">Одноранговое соединение активно…</string>
+    <string name="tor_bootstrapped">Tor загружен на 100%</string>
+    <!-- Tor -->
+
+</resources>

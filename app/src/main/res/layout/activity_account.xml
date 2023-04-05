@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/jblue">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="222dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/account_title"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:shadowColor="@color/white"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="222dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/account_title2"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:id="@+id/set_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@drawable/gradient_background"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/get_background"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/icons8_edit_image_90"
+                            android:text="Scan barcode" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/get_pic1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/seed"
+                            android:bottomLeftRadius="10dp"
+                            android:bottomRightRadius="10dp"
+                            android:gravity="center"
+                            android:text="Avatar" />
+
+                        <ImageButton
+                            android:id="@+id/get_pic2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/seed"
+                            android:bottomLeftRadius="10dp"
+                            android:bottomRightRadius="10dp"
+                            android:gravity="center"
+                            android:text="Avatar" />
+
+                        <ImageButton
+                            android:id="@+id/get_pic3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/seed"
+                            android:bottomLeftRadius="10dp"
+                            android:bottomRightRadius="10dp"
+                            android:gravity="center"
+                            android:text="Avatar" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/status_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_corners_blue"
+                        android:text="0 Friends and 0 Followers"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="465dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="400dp">
+
+                        <Button
+                            android:id="@+id/get_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="@string/button_edit_name"
+                            android:background="#80154766"
+                            android:theme="@style/AppTheme.Button" />
+
+                        <Button
+                            android:id="@+id/get_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/button_edit_status"
+                            android:background="#80154766"
+                            android:theme="@style/AppTheme.Button" />
+
+                        <Button
+                            android:id="@+id/get_birthday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/button_edit_birthday"
+                            android:background="#80154766"
+                            android:theme="@style/AppTheme.Button" />
+
+                        <Button
+                            android:id="@+id/get_relationship_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/button_edit_relationship_status"
+                            android:background="#80154766"
+                            android:theme="@style/AppTheme.Button" />
+
+                        <Button
+                            android:id="@+id/get_job_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/button_edit_job_status"
+                            android:background="#80154766"
+                            android:theme="@style/AppTheme.Button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/scan_info1"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="@string/instructions_scan_me"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/qr_image_friend"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/placeholder"
+                        android:text="@string/account_wait_for_tor"
+                        android:contentDescription="qr_imagex" />
+
+                    <TextView
+                        android:id="@+id/scan_info2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/instructions_scan_friend"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/get_qr_code"
+                        android:theme="@style/AppTheme.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/button_scan" />
+
+                    <Button
+                        android:id="@+id/get_text_code"
+                        android:theme="@style/AppTheme.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/button_copy_text" />
+
+                    <Button
+                        android:id="@+id/add_text_code"
+                        android:theme="@style/AppTheme.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/button_paste_text" />
+
+                    <TextView
+                        android:id="@+id/send_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/account_wait_for_tor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/send_pub_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/account_wait_for_tor"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/allow_following"
+                        android:layout_width="290dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="left"
+                        android:textStyle="bold"
+                        android:text="@string/checkbox_allow_followers">
+                    </androidx.appcompat.widget.AppCompatCheckBox>
+
+                    <TextView
+                        android:id="@+id/follow_info1"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="20dp"
+                        android:text="@string/account_label_warning1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/follow_info2"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="20dp"
+                        android:text="@string/account_label_warning2"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/qr_image_follow"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/placeholder"
+                        android:text="@string/account_wait_for_tor"
+                        android:contentDescription="qr_imagex" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

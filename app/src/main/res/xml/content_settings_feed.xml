@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intentservice.chatui.sample.SettingsActivity">
+
+
+    <PreferenceCategory android:title="Application">
+
+        <Preference
+            android:title="Program Version ID"
+            android:summary="0.0.0"
+            android:key="programid" />
+
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_user_adds"
+        android:summary="@string/checkbox_label"
+        android:title="@string/checkbox_adds" />
+
+    <PreferenceCategory android:title="Friends">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_name"
+            android:title="Name Changes"
+            android:summary="Show friend name updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_status"
+            android:title="Status Updates"
+            android:summary="Show friend status updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_avatar"
+            android:title="Image Updates"
+            android:summary="Show friend image updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_background"
+            android:title="Background Updates"
+            android:summary="Show friend background updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_products"
+            android:title="Products Updates"
+            android:summary="Show friend's products for sale"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_pictures"
+            android:title="New Pictures"
+            android:summary="Show friend's new pictures"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_likes"
+            android:title="Liked Updates"
+            android:summary="Show friend's likes"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Following">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_name"
+            android:title="Name Changes"
+            android:summary="Show following name updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_status"
+            android:title="Status Updates"
+            android:summary="Show following status updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_avatar"
+            android:title="Image Updates"
+            android:summary="Show following image updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_background"
+            android:title="Background Updates"
+            android:summary="Show following background updates"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_friend_pictures"
+            android:title="New Pictures"
+            android:summary="Show following's new pictures"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_products"
+            android:title="Products Updates"
+            android:summary="Show following's products for sale"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_pictures"
+            android:title="New Pictures"
+            android:summary="Show following's new pictures"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_following_likes"
+            android:title="Liked Updates"
+            android:summary="Show following's likes"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

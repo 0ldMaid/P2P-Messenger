@@ -1,0 +1,78 @@
+<resources>
+    <!-- Shared -->
+    <string name="app_name">P2P Messenger</string>
+    <string name="checkbox_adds">Show Me Advertisements</string>
+    <string name="checkbox_label">Support this APP by showing me ads.</string>
+    <!-- Shared -->
+    <!-- Home -->
+    <string name="home_title">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_account">Accounts 3</string>
+    <string name="account_account">Account</string>
+    <string name="account_store">Store</string>
+    <string name="account_photo_album">Photo Album</string>
+    <string name="list_apps">Apps 2</string>
+    <string name="app_news_feed">News Feed</string>
+    <string name="app_matchmaker">Match Maker 1.0</string>
+    <string name="list_dpps">Dapps</string>
+    <string name="list_friends">Friends</string>
+    <string name="list_following">Following</string>
+    <string name="textfield_search">Search</string>
+    <!-- Home -->
+    <!-- Home Settings -->
+    <string name="title_application">Application</string>
+    <string name="label_application_id">Program Version ID</string>
+    <string name="title_advertisements">Advertisements</string>
+    <!-- Home Settings -->
+    <!-- Account -->
+    <string name="account_title">Account Settings</string>
+    <string name="account_welcome_text">Click here to edit your account and add new friends.</string>
+    <string name="account_title2">Edit your account and add new friends.</string>
+    <string name="button_edit_name">Edit Name</string>
+    <string name="button_edit_status">Edit Status</string>
+    <string name="button_edit_birthday">Edit Birthday</string>
+    <string name="button_edit_relationship_status">Edit Relationship Status</string>
+    <string name="button_edit_job_status">Edit Job Status</string>
+    <string name="instructions_scan_me">Have your friend scan this code.</string>
+    <string name="instructions_scan_friend">And then you must scan their code also.</string>
+    <string name="button_scan">Scan QR Code</string>
+    <string name="button_copy_text">Copy Friend ID to Clipboard</string>
+    <string name="button_paste_text">Paste Friend ID from Clipboard</string>
+    <string name="account_wait_for_tor">Wait for Tor to load…</string>
+    <string name="account_tor_address">Tor Address MD5:</string>
+    <string name="account_public_key">Pubic Key MD5:</string>
+    <string name="checkbox_allow_followers">Allow users to follow me.</string>
+    <string name="account_label_warning1">Followers cannot message you.</string>
+    <string name="account_label_warning2">But anyone can follow you, so be careful.</string>
+    <!-- Account -->
+    <!-- Photo Album -->
+    <string name="photo_album_title">Photo Album</string>
+    <string name="photo_album_title2">Add photos for your friends to see.</string>
+    <!-- Photo Album -->
+    <!-- Chat -->
+    <string name="chat_title">Chat</string>
+    <string name="chat_title2">Chat</string>
+    <string name="chat_textfield_message">ENTER MESSAGE</string>
+    <string name="chat_textfield_send">SEND</string>
+    <string name="chat_system_message_waiting">Waiting for friend to accept.</string>
+    <string name="chat_system_message_confirmed">Friend is now confirmed.</string>
+    <string name="chat_system_message_confirmed2">Confirmed.</string>
+    <string name="chat_system_message_sent">Sent</string>
+    <string name="chat_system_message_read">Read</string>
+    <string name="chat_system_message_failed">Failed</string>
+    <!-- Chat -->
+    <!-- News Feed -->
+    <string name="feed_title">News Feed</string>
+    <string name="title_friend">Friend(s)</string>
+    <string name="title_following">Following</string>
+    <!-- News Feed -->
+    <!-- Tor -->
+    <string name="tor_no_connection">No connection…</string>
+    <string name="tor_restarting">Tor is restarting…</string>
+    <string name="tor_active">Tor is active, checking connection…</string>
+    <string name="tor_connection_active">Internet connection is active…</string>
+    <string name="tor_peer_active">Peer connection is active…</string>
+    <string name="tor_bootstrapped">Tor bootstrapped 100%</string>
+    <!-- Tor -->
+
+</resources>
